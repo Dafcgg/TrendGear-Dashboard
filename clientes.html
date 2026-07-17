@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendGear - Clientes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__brand">
+      <img src="img/logo.svg" alt="Logo de TrendGear" class="header__logo" />
+      <h1 class="header__title" data-i18n="brand">TrendGear</h1>
+    </div>
+
+    <button class="header__toggle" id="navToggle" aria-label="Abrir menu de navegacion" aria-expanded="false" aria-controls="navMenu">
+      <span class="header__toggle-bar"></span>
+      <span class="header__toggle-bar"></span>
+      <span class="header__toggle-bar"></span>
+    </button>
+
+    <div class="header__controls">
+      <nav class="nav" id="navMenu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav_dashboard">Dashboard</a></li>
+          <li class="nav__item"><a href="clientes.html" class="nav__link" data-i18n="nav_clientes">Clientes</a></li>
+          <li class="nav__item"><a href="reportes.html" class="nav__link" data-i18n="nav_reportes">Reportes</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Selector de idioma">
+        <button class="lang-toggle__option" data-lang="es">ES</button>
+        <button class="lang-toggle__option" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-grid">
+    <div class="hero-grid__content">
+      <h2 class="page-title" data-i18n="clientes_title">Directorio de Clientes</h2>
+      <p class="page-subtitle" data-i18n="clientes_subtitle">Busca y filtra la base de clientes de TrendGear.</p>
+    </div>
+  </section>
+
+  <main class="main">
+    <section id="clientes" class="clientes">
+
+      <div id="statusMessage" class="status-message" role="status" aria-live="polite"></div>
+
+      <div class="filters">
+        <input
+          type="search"
+          id="searchInput"
+          class="filters__search"
+          data-i18n-placeholder="search_placeholder"
+          placeholder="Buscar por nombre, correo o ciudad..."
+        />
+
+        <select id="membershipFilter" class="filters__select">
+          <option value="all" data-i18n="filter_all">Todas las membresias</option>
+          <option value="Basic" data-i18n="filter_basic">Basic</option>
+          <option value="Pro" data-i18n="filter_pro">Pro</option>
+          <option value="VIP" data-i18n="filter_vip">VIP</option>
+        </select>
+      </div>
+
+      <p id="resultsCount" class="results-count"></p>
+
+      <div class="table-wrapper">
+        <table class="table" id="customersTable">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="th_id">Customer ID</th>
+              <th scope="col" data-i18n="th_name">Name</th>
+              <th scope="col" data-i18n="th_email">Email</th>
+              <th scope="col" data-i18n="th_city">City</th>
+              <th scope="col" data-i18n="th_payment">Payment Method</th>
+              <th scope="col" data-i18n="th_login">Last Login Date</th>
+              <th scope="col" data-i18n="th_status">Membership Status</th>
+            </tr>
+          </thead>
+          <tbody id="customersTableBody">
+            <!-- Las filas se generan dinamicamente con JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer_text">&copy; 2026 TrendGear. Proyecto academico con datos sinteticos.</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script type="module" src="js/clientes.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendGear - Reportes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__brand">
+      <img src="img/logo.svg" alt="Logo de TrendGear" class="header__logo" />
+      <h1 class="header__title" data-i18n="brand">TrendGear</h1>
+    </div>
+
+    <button class="header__toggle" id="navToggle" aria-label="Abrir menu de navegacion" aria-expanded="false" aria-controls="navMenu">
+      <span class="header__toggle-bar"></span>
+      <span class="header__toggle-bar"></span>
+      <span class="header__toggle-bar"></span>
+    </button>
+
+    <div class="header__controls">
+      <nav class="nav" id="navMenu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav_dashboard">Dashboard</a></li>
+          <li class="nav__item"><a href="clientes.html" class="nav__link" data-i18n="nav_clientes">Clientes</a></li>
+          <li class="nav__item"><a href="reportes.html" class="nav__link" data-i18n="nav_reportes">Reportes</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Selector de idioma">
+        <button class="lang-toggle__option" data-lang="es">ES</button>
+        <button class="lang-toggle__option" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-grid">
+    <div class="hero-grid__content">
+      <h2 class="page-title" data-i18n="reportes_title">Reportes y Estadisticas</h2>
+      <p class="page-subtitle" data-i18n="reportes_subtitle">Analisis agregado del comportamiento de compra de los clientes.</p>
+    </div>
+  </section>
+
+  <main class="main">
+    <section id="reportes" class="reportes">
+
+      <div id="statusMessage" class="status-message" role="status" aria-live="polite"></div>
+
+      <div class="reports-grid">
+        <div class="report-card">
+          <h3 class="report-card__title" data-i18n="report_by_city">Ingresos por Ciudad</h3>
+          <div id="reportByCity"></div>
+        </div>
+
+        <div class="report-card">
+          <h3 class="report-card__title" data-i18n="report_by_membership">Clientes por Membresia</h3>
+          <div id="reportByMembership"></div>
+        </div>
+
+        <div class="report-card">
+          <h3 class="report-card__title" data-i18n="report_by_payment">Metodos de Pago</h3>
+          <div id="reportByPayment"></div>
+        </div>
+
+        <div class="report-card">
+          <h3 class="report-card__title" data-i18n="report_top_products">Productos Mas Vendidos</h3>
+          <div id="reportTopProducts"></div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer_text">&copy; 2026 TrendGear. Proyecto academico con datos sinteticos.</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script type="module" src="js/reportes.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrendGear Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__brand">
+      <img src="img/logo.svg" alt="Logo de TrendGear" class="header__logo" />
+      <h1 class="header__title" data-i18n="brand">TrendGear</h1>
+    </div>
+
+    <button class="header__toggle" id="navToggle" aria-label="Abrir menu de navegacion" aria-expanded="false" aria-controls="navMenu">
+      <span class="header__toggle-bar"></span>
+      <span class="header__toggle-bar"></span>
+      <span class="header__toggle-bar"></span>
+    </button>
+
+    <div class="header__controls">
+      <nav class="nav" id="navMenu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link" data-i18n="nav_dashboard">Dashboard</a></li>
+          <li class="nav__item"><a href="clientes.html" class="nav__link" data-i18n="nav_clientes">Clientes</a></li>
+          <li class="nav__item"><a href="reportes.html" class="nav__link" data-i18n="nav_reportes">Reportes</a></li>
+        </ul>
+      </nav>
+
+      <div class="lang-toggle" role="group" aria-label="Selector de idioma">
+        <button class="lang-toggle__option" data-lang="es">ES</button>
+        <button class="lang-toggle__option" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero-grid">
+    <div class="hero-grid__content">
+      <h2 class="page-title" data-i18n="dash_title">Resumen de Clientes</h2>
+      <p class="page-subtitle" data-i18n="dash_subtitle">Datos sinteticos de la operacion de TrendGear en tiempo real.</p>
+    </div>
+  </section>
+
+  <main class="main">
+    <section id="dashboard" class="dashboard">
+
+      <div id="statusMessage" class="status-message" role="status" aria-live="polite"></div>
+
+      <div id="cardsContainer" class="cards" aria-label="Tarjetas resumen de clientes">
+        <!-- Las tarjetas se generan dinamicamente con JavaScript -->
+      </div>
+
+      <div class="table-wrapper">
+        <table class="table" id="customersTable">
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="th_id">Customer ID</th>
+              <th scope="col" data-i18n="th_name">Name</th>
+              <th scope="col" data-i18n="th_email">Email</th>
+              <th scope="col" data-i18n="th_product">Product Purchased</th>
+              <th scope="col" data-i18n="th_date">Purchase Date</th>
+              <th scope="col" data-i18n="th_amount">Amount Spent ($)</th>
+              <th scope="col" data-i18n="th_age">Age</th>
+              <th scope="col" data-i18n="th_city">City</th>
+              <th scope="col" data-i18n="th_payment">Payment Method</th>
+              <th scope="col" data-i18n="th_login">Last Login Date</th>
+              <th scope="col" data-i18n="th_status">Membership Status</th>
+            </tr>
+          </thead>
+          <tbody id="customersTableBody">
+            <!-- Las filas se generan dinamicamente con JavaScript -->
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-i18n="footer_text">&copy; 2026 TrendGear. Proyecto academico con datos sinteticos.</p>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/data-loader.js"></script>
+  <script type="module" src="js/script.js"></script>
+</body>
+</html>

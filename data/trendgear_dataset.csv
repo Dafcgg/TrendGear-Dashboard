@@ -1,0 +1,51 @@
+Customer_ID,Name,Email,Product_Purchased,Purchase_Date,Amount_Spent,Age,City,Payment_Method,Last_Login_Date,Membership_Status
+CUST_001,John Doe,john.doe@example.com,Laptop Dell XPS 15,2023-10-12,1250.50,28,Madrid,Credit Card,2023-10-15,Pro
+CUST_002,Maria Gonzalez,maria.gonzalez@gmail.com,Smartphone Samsung S23,2023-01-05,899.99,34,Bogota,PayPal,2023-01-06,Basic
+CUST_003,Carlos Ruiz,carlos.ruiz@gmail.com,Monitor LG UltraWide,2023-02-14,329.90,45,Ciudad de Mexico,Debit Card,2023-02-20,VIP
+CUST_004,Ana Torres,ana.torres@example.com,Auriculares Sony WH-1000XM5,2023-03-01,349.00,22,Lima,Credit Card,2023-03-03,Basic
+CUST_005,Luis Fernandez,luis.fernandez@gmail.com,Laptop HP Pavilion,2023-03-18,780.25,51,Buenos Aires,PayPal,2023-03-19,Pro
+CUST_006,Sofia Ramirez,sofia.ramirez@example.com,Teclado Mecanico Logitech,2023-04-02,129.99,19,Santiago,Credit Card,2023-04-10,Basic
+CUST_007,Diego Morales,diego.morales@gmail.com,Smartphone iPhone 14,2023-04-15,999.00,29,Cucuta,Debit Card,2023-04-16,VIP
+CUST_008,Valentina Castro,valentina.castro@gmail.com,Tablet iPad Air,2023-05-01,599.50,26,Medellin,Credit Card,2023-05-05,Pro
+CUST_009,Andres Gomez,andres.gomez@example.com,Monitor Samsung Odyssey,2023-05-12,410.75,38,Caracas,PayPal,2023-05-14,Basic
+CUST_010,Camila Vargas,camila.vargas@gmail.com,Auriculares JBL Tune,2023-05-20,89.99,23,Quito,Credit Card,2023-05-25,Basic
+CUST_011,Javier Ortiz,javier.ortiz@gmail.com,Laptop Lenovo ThinkPad,2023-06-03,1100.00,42,Bogota,Debit Card,2023-06-05,VIP
+CUST_012,Isabella Rojas,isabella.rojas@example.com,Smartphone Xiaomi 13,2023-06-10,499.99,31,Madrid,PayPal,2023-06-12,Pro
+CUST_013,Miguel Herrera,miguel.herrera@gmail.com,Mouse Gamer Razer,2023-06-18,59.99,20,Lima,Credit Card,2023-06-19,Basic
+CUST_014,Daniela Reyes,daniela.reyes@gmail.com,Monitor Dell 27,2023-07-01,289.00,27,Ciudad de Mexico,Debit Card,2023-07-03,Pro
+CUST_015,Sebastian Cruz,sebastian.cruz@example.com,Laptop Asus ROG,2023-07-09,1450.00,24,Buenos Aires,Credit Card,2023-07-15,VIP
+CUST_016,Paula Mendoza,paula.mendoza@gmail.com,Auriculares Bose QC45,2023-07-22,329.00,36,Santiago,PayPal,2023-07-25,Basic
+CUST_017,Ricardo Silva,ricardo.silva@gmail.com,Smartphone Google Pixel 7,2023-08-02,649.00,44,Cucuta,Credit Card,2023-08-04,Pro
+CUST_018,Laura Jimenez,laura.jimenez@example.com,Tablet Samsung Tab S8,2023-08-11,529.99,33,Medellin,Debit Card,2023-08-13,Basic
+CUST_019,Fernando Diaz,fernando.diaz@gmail.com,Teclado Inalambrico Apple,2023-08-19,99.00,55,Caracas,Credit Card,2023-08-22,VIP
+CUST_020,Gabriela Nunez,gabriela.nunez@gmail.com,Monitor LG 24,2023-09-01,199.99,21,Quito,PayPal,2023-09-05,Basic
+CUST_021,Alejandro Paz,alejandro.paz@example.com,Laptop Acer Aspire,2023-09-10,650.00,48,Bogota,Credit Card,2023-09-12,Pro
+CUST_022,Natalia Suarez,natalia.suarez@gmail.com,Smartphone OnePlus 11,2023-09-16,599.00,29,Madrid,Debit Card,2023-09-18,Basic
+CUST_023,Emilio Vega,emilio.vega@gmail.com,Auriculares Sennheiser HD,2023-09-25,249.99,37,Lima,Credit Card,2023-09-28,Pro
+CUST_024,Mariana Flores,mariana.flores@example.com,Webcam Logitech Brio,2023-10-02,129.00,25,Ciudad de Mexico,PayPal,2023-10-04,Basic
+CUST_025,Tomas Guerrero,tomas.guerrero@gmail.com,Laptop MacBook Air M2,2023-10-08,1199.00,32,Buenos Aires,Credit Card,2023-10-10,VIP
+CUST_026,Lucia Ibarra,lucia.ibarra@gmail.com,Smartphone Motorola Edge,2023-10-15,399.99,40,Santiago,Debit Card,2023-10-17,Basic
+CUST_027,Nicolas Pena,nicolas.pena@example.com,Monitor Acer Predator,2023-10-20,459.00,23,Cucuta,Credit Card,2023-10-23,Pro
+CUST_028,Renata Campos,renata.campos@gmail.com,Auriculares Beats Studio,2023-10-27,299.99,30,Medellin,PayPal,2023-10-29,Basic
+CUST_029,Hector Aguilar,hector.aguilar@gmail.com,Tablet Lenovo Tab P11,2023-11-02,269.00,52,Caracas,Credit Card,2023-11-06,Pro
+CUST_030,Victoria Leon,victoria.leon@example.com,Laptop Dell Inspiron,2023-11-08,899.99,27,Quito,Debit Card,2023-11-10,Basic
+CUST_031,Adrian Molina,adrian.molina@gmail.com,Smartphone Samsung A54,2023-11-13,349.00,35,Bogota,Credit Card,2023-11-15,Basic
+CUST_032,Carolina Duarte,carolina.duarte@gmail.com,Teclado Mecanico Corsair,2023-11-18,149.99,19,Madrid,PayPal,2023-11-20,Basic
+CUST_033,Felipe Navarro,felipe.navarro@example.com,Monitor Samsung Curvo,2023-11-22,379.00,46,Lima,Credit Card,2023-11-25,VIP
+CUST_034,Antonella Rios,antonella.rios@gmail.com,Auriculares Apple AirPods Pro,2023-11-27,249.00,24,Ciudad de Mexico,Debit Card,2023-11-29,Pro
+CUST_035,Mateo Cabrera,mateo.cabrera@gmail.com,Smartphone iPhone 13,2023-12-01,799.00,41,Buenos Aires,Credit Card,2023-12-03,VIP
+CUST_036,Julieta Espinoza,julieta.espinoza@example.com,Laptop HP Envy,2023-12-04,999.99,28,Santiago,PayPal,2023-12-06,Pro
+CUST_037,Ignacio Bravo,ignacio.bravo@gmail.com,Monitor BenQ Gaming,2023-12-07,309.00,33,Cucuta,Credit Card,2023-12-09,Basic
+CUST_038,Florencia Soto,florencia.soto@gmail.com,Tablet Xiaomi Pad 6,2023-12-10,299.00,22,Medellin,Debit Card,2023-12-12,Basic
+CUST_039,Maximiliano Vera,maximiliano.vera@example.com,Auriculares Skullcandy,2023-12-13,79.99,49,Caracas,Credit Card,2023-12-15,Basic
+CUST_040,Agustina Rivas,agustina.rivas@gmail.com,Smartphone Realme 11,2023-12-16,299.99,26,Quito,PayPal,2023-12-18,Basic
+CUST_041,Bruno Cordero,bruno.cordero@gmail.com,Laptop MSI Gaming,2023-12-19,1350.00,31,Bogota,Credit Card,2023-12-21,VIP
+CUST_042,Martina Salazar,martina.salazar@example.com,Monitor Dell UltraSharp,2023-12-20,499.99,39,Madrid,Debit Card,2023-12-22,Pro
+CUST_043,Emiliano Rincon,emiliano.rincon@gmail.com,Auriculares Sony WF-1000XM4,2023-12-21,279.00,20,Lima,Credit Card,2023-12-23,Basic
+CUST_044,Constanza Peralta,constanza.peralta@gmail.com,Smartphone Nokia G60,2023-12-22,249.00,58,Ciudad de Mexico,PayPal,2023-12-24,Basic
+CUST_045,Joaquin Fuentes,joaquin.fuentes@example.com,Tablet Amazon Fire HD,2023-12-23,129.99,45,Buenos Aires,Credit Card,2023-12-26,Basic
+CUST_046,Amparo Delgado,amparo.delgado@gmail.com,Laptop ASUS VivoBook,2023-12-24,679.00,25,Santiago,Debit Card,2023-12-27,Pro
+CUST_047,Rodrigo Contreras,rodrigo.contreras@gmail.com,Monitor ViewSonic,2023-12-25,229.99,37,Cucuta,Credit Card,2023-12-28,Basic
+CUST_048,Milagros Paredes,milagros.paredes@example.com,Auriculares Anker Soundcore,2023-12-26,69.99,29,Medellin,PayPal,2023-12-29,Basic
+CUST_049,Esteban Villalobos,esteban.villalobos@gmail.com,Smartphone Huawei P60,2023-12-27,749.00,43,Caracas,Credit Card,2023-12-30,VIP
+CUST_050,Rosario Maldonado,rosario.maldonado@gmail.com,Laptop Microsoft Surface,2023-12-28,1099.99,34,Quito,Debit Card,2023-12-31,Pro
