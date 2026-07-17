@@ -132,27 +132,6 @@ TrendGear-Dashboard/
 ```
 
 
-## Configuración de Firebase
-
-Firebase Realtime Database se utiliza únicamente como **fuente de respaldo**, en caso de que el archivo CSV local no pueda cargarse. Para configurarlo:
-
-1. Crea un proyecto en [Firebase Console](https://console.firebase.google.com/).
-2. Habilita **Realtime Database** dentro de tu proyecto.
-3. Importa el dataset sintético de clientes en la raíz de la base de datos (en formato de objeto o arreglo de clientes).
-4. Copia la URL de tu Realtime Database, con el sufijo `.json`, por ejemplo:
-
-   ```
-   https://tu-proyecto-default-rtdb.firebaseio.com/.json
-   ```
-
-5. En el archivo `js/data-loader.js`, reemplaza el valor de la constante `FIREBASE_URL` por la URL de tu propio proyecto:
-
-   ```javascript
-   const FIREBASE_URL = "https://tu-proyecto-default-rtdb.firebaseio.com/.json";
-   ```
-
-6. Durante el desarrollo, configura las reglas de lectura de tu Realtime Database en modo de prueba (lectura pública) para evitar errores de conexión al consultar los datos desde el navegador.
-
 ## Funcionamiento
 
 1. El usuario abre cualquiera de las tres páginas del sitio (`index.html`, `clientes.html` o `reportes.html`).
