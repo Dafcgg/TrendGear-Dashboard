@@ -9,7 +9,7 @@ Necesito que me ayudes a construir un proyecto web llamado "TrendGear Dashboard"
 Requisitos generales
 
 
-Solo HTML5, CSS3 y JavaScript puro (Vanilla). Nada de Bootstrap, Tailwind, React, Vue, Angular ni jQuery.
+Solo HTML5, CSS3 y JavaScript puro (Vanilla). Nada de otras tecnologias.
 El código debe quedar organizado en archivos separados (HTML, CSS y JS), no todo mezclado.
 Evita duplicar lógica; separa responsabilidades entre archivos.
 
@@ -89,21 +89,6 @@ Desarrollar un dashboard web funcional que permita visualizar, consultar y anali
 - Aplicar buenas prácticas de organización de código, separando responsabilidades en módulos independientes (carga de datos, traducciones y lógica de cada página).
 - Ofrecer herramientas de búsqueda, filtrado y análisis agregado sobre el dataset de clientes.
 
-## Características
-
-- **Doble fuente de datos:** el sistema intenta cargar primero el dataset desde un archivo CSV local (`data/trendgear_dataset.csv`) y, si falla la carga o el archivo está vacío/corrupto, recurre automáticamente a Firebase Realtime Database.
-- **Parser de CSV propio:** procesamiento manual del archivo CSV, con soporte para valores entre comillas, comas internas y saltos de línea.
-- **Renderizado dinámico con JavaScript:** las tarjetas resumen y las filas de las tablas se generan en tiempo de ejecución a partir de los datos obtenidos, sin contenido estático en el HTML.
-- **Tres páginas funcionales:**
-  - `index.html` — Dashboard con tarjetas resumen (total de clientes, ingresos totales, gasto promedio, miembros VIP) y tabla completa de clientes.
-  - `clientes.html` — Directorio de clientes con búsqueda en tiempo real por nombre, correo o ciudad, y filtro por tipo de membresía (Basic, Pro, VIP).
-  - `reportes.html` — Reportes agregados en forma de barras: ingresos por ciudad, clientes por membresía, métodos de pago y productos más vendidos.
-- **Internacionalización (i18n):** selector de idioma Español/Inglés que traduce dinámicamente todos los textos de la interfaz (menú, títulos, encabezados de tabla, mensajes de estado). La preferencia se guarda en `localStorage` y se mantiene entre páginas.
-- **Diseño responsive:** adaptación de la interfaz a distintos tamaños de pantalla mediante media queries.
-- **Menú hamburguesa:** navegación colapsable para dispositivos móviles, con atributos ARIA para accesibilidad.
-- **Manejo de errores:** mensajes de estado (`cargando`, `error de conexión`, `sin registros`) mostrados al usuario mediante una región `aria-live`.
-- **Interfaz moderna tipo glassmorphism:** paneles translúcidos con efecto de desenfoque (`backdrop-filter`), degradados de color y tarjetas con animaciones sutiles al pasar el cursor.
-- **Datos sintéticos:** el dataset contiene información ficticia de clientes (ID, nombre, correo, producto comprado, fecha de compra, monto gastado, edad, ciudad, método de pago, último ingreso y estado de membresía), utilizada exclusivamente con fines académicos.
 
 ## Tecnologías Utilizadas
 
@@ -146,13 +131,6 @@ TrendGear-Dashboard/
 └── README.md
 ```
 
-## Instalación
-
-1. Clona o descarga este repositorio en tu equipo.
-2. Abre la carpeta `TrendGear-Dashboard` en tu editor de código (por ejemplo, Visual Studio Code).
-3. No se requiere instalar dependencias ni gestores de paquetes: el proyecto es HTML, CSS y JavaScript puro.
-4. Verifica que el archivo `data/trendgear_dataset.csv` esté presente dentro de la carpeta `data/` para que la aplicación cargue los datos localmente.
-5. Abre `index.html` en tu navegador o utiliza una extensión como **Live Server** de VS Code para servir el proyecto localmente.
 
 ## Configuración de Firebase
 
